@@ -20,7 +20,7 @@ jobs:
 
       # Publish the site
       - name: Publish
-        run: dotnet publish CSV.Diff.Service.Web/CSV.Diff.Service.Wasm/CSV.Diff.Service.Wasm.csproj -p:GHPages=true -c:Release -o:public
+        run: dotnet publish CSV.Diff.Service.Wasm/CSV.Diff.Service.Wasm.csproj -p:GHPages=true -c:Release -o:public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
