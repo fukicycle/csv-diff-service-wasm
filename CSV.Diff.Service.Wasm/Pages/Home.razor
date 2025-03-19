@@ -1,7 +1,28 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
-
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<PageTitle>ホーム</PageTitle>
+<div class="flex">
+    <h4>変更前と変更後のファイルを選んでください*</h4>
+    <div class="two-column-row">
+        <div class="grid-item">
+            <InputFile />
+            <div>変更前のプレビュー</div>
+        </div>
+        <div class="grid-item">
+            <InputFile />
+            <div>変更後のプレビュー</div>
+        </div>
+    </div>
+        <h4>基準の列を選んでください*</h4>
+        <select>
+            <option disabled selected>選択してください</option>
+        </select>
+    <h4>比較したい列を選択してください*</h4>
+    <div class="two-column-row">
+        <div class="grid-item">
+        </div>
+        <div class="grid-item">
+        </div>
+    </div>
+    <button class="btn">実行</button>
+</div>

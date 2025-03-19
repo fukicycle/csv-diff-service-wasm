@@ -1,16 +1,15 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<header>
+    <div class="title">csvファイル比較サービス(preview)</div>
+    <nav>
+        <NavLink href="" Match="NavLinkMatch.All">ホーム</NavLink>
+        <NavLink href="#" Match="NavLinkMatch.Prefix">使い方</NavLink>
+        <NavLink href="https://fukicycle.github.io/csv-diff-service-web/" target="_blank">ソース</NavLink>
+    </nav>
+</header>
+<main>
+    @Body
+</main>
+<footer>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+</footer>
